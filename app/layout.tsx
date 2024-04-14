@@ -19,10 +19,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <header>
+        <header className="">
           <MainNav />
         </header>
-        <main className="flex pt-16">
+        <main className="flex pt-16 h-full">
           <SideNav />
           {children}
         </main>
