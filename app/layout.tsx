@@ -21,7 +21,7 @@ export default function RootLayout({
       <body className={inter.className}>
         <MainNav />
         <SideNav />
-        <main className="h-screen">{children}</main>
+        <main className="h-screen w-full lg:pl-60">{children}</main>
       </body>
     </html>
   );
