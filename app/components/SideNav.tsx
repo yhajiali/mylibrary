@@ -16,7 +16,11 @@ import {
 } from "@heroicons/react/24/outline";
 import { IoLibraryOutline } from "react-icons/io5";
 
-export const SideNav = ({ openSideNav }: Boolean) => {
+interface Props {
+  openSideNav: boolean;
+}
+
+export const SideNav = ({ openSideNav }: Props) => {
   return (
     <aside
       className={`${

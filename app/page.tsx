@@ -6,7 +6,7 @@ import { MainNav } from "./components/MainNav";
 import { useState } from "react";
 
 export default function Home() {
-  const [openSideNav, setSideNav] = useState<Boolean>(false);
+  const [openSideNav, setSideNav] = useState(false);
   return (
     <>
       <header className="sticky top-0 z-10 w-full">

@@ -5,11 +5,19 @@ import Logo from "./ui/Logo";
 import { MagnifyingGlassIcon, Bars3Icon } from "@heroicons/react/24/outline";
 import ProfilePic from "./ui/ProfilePic";
 
-export const MainNav = ({ openSideNav, setSideNav }) => {
+interface Props {
+  openSideNav: boolean;
+  setSideNav: React.Dispatch<React.SetStateAction<boolean>>;
+}
+
+export const MainNav: React.FC<Props> = ({ openSideNav, setSideNav }) => {
   return (
     <div className="w-full h-16 px-4 py-2 flex justify-between items-center border-b bg-white">
-      <button onClick={() => setSideNav(!openSideNav)}>
-        <Bars3Icon className="size-7 lg:hidden" />
+      <button
+        onClick={() => setSideNav(!openSideNav)}
+        className="lg:hidden size-7"
+      >
+        <Bars3Icon />
       </button>
       <Logo />
 
