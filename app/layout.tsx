@@ -1,8 +1,6 @@
 import "./globals.css";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
-import { SideNav } from "./components/SideNav";
-import { MainNav } from "./components/MainNav";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -18,11 +16,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>
-        <MainNav />
-        <SideNav />
-        <main className="h-screen w-full lg:pl-60">{children}</main>
-      </body>
+      <body className={inter.className}>{children}</body>
     </html>
   );
 }

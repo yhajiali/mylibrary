@@ -1,22 +1,28 @@
+"use client";
+
 import React from "react";
 import Link from "next/link";
+import ProfilePic from "./ui/ProfilePic";
+// Icons
 import {
   MapIcon,
   FireIcon,
   ForwardIcon,
-  BookmarkIcon,
   CheckCircleIcon,
-  BuildingLibraryIcon,
-  PencilIcon,
   PencilSquareIcon,
-  CogIcon,
   AdjustmentsHorizontalIcon,
   Squares2X2Icon,
+  BookOpenIcon,
 } from "@heroicons/react/24/outline";
+import { IoLibraryOutline } from "react-icons/io5";
 
-export const SideNav = () => {
+export const SideNav = ({ openSideNav }: Boolean) => {
   return (
-    <aside className="-translate-x-full transition-transform duration-300 lg:translate-x-0 flex-col justify-between fixed w-60 h-screen border-r">
+    <aside
+      className={`${
+        !openSideNav && "-translate-x-full"
+      } transition-transform duration-300 lg:translate-x-0 flex-col justify-between fixed w-60 h-screen border-r  bg-white`}
+    >
       <nav className="flex flex-col gap-4 h-full py-4">
         <ul className="flex flex-col mb-2">
           <li className="px-4 py-1 font-semibold text-sm text-gray-500">
@@ -24,7 +30,9 @@ export const SideNav = () => {
           </li>
           <li className="px-4 py-1 hover:bg-gray-200">
             <Link href={"/"} className="flex gap-3 items-center">
-              <span className="size-5  bg-blue-400 rounded-md"></span>
+              <span className="size-5">
+                <ProfilePic />
+              </span>
               <span>My Feed</span>
             </Link>
           </li>
@@ -52,7 +60,7 @@ export const SideNav = () => {
           <li className="px-4 py-1 hover:bg-gray-200">
             <Link href={"/"} className="flex gap-3 items-center">
               <span>
-                <BookmarkIcon className="size-5" />
+                <BookOpenIcon className="size-5" />
               </span>
               <span>Currently Reading</span>
             </Link>
@@ -76,7 +84,7 @@ export const SideNav = () => {
           <li className="px-4 py-1 hover:bg-gray-200">
             <Link href={"/"} className="flex gap-3 items-center">
               <span>
-                <BuildingLibraryIcon className="size-5" />
+                <IoLibraryOutline className="size-5" />
               </span>
               <span>Bookshelf</span>
             </Link>
