@@ -19,7 +19,7 @@ export const MainNav = () => {
           name="search"
           id="search"
           placeholder="Search..."
-          className="focus:outline-none placeholder:text-gray-500"
+          className="focus:outline-none placeholder:text-gray-500 w-full"
         />
       </nav>
 
