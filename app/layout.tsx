@@ -19,7 +19,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={inter.className}>
         <Header />
-        {children}
+        <main className="lg:pl-60 m-4">{children}</main>
       </body>
     </html>
   );
