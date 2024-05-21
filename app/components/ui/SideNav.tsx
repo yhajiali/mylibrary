@@ -2,7 +2,7 @@
 
 import React from "react";
 import Link from "next/link";
-import { sideNavLinks } from "../lib/links";
+import { sideNavLinks } from "../../lib/links";
 
 interface Props {
   openSideNav: boolean;
@@ -24,9 +24,9 @@ export const SideNav = ({ openSideNav }: Props) => {
             {navSection.links.map((link) => (
               <li className="px-4 py-1 hover:bg-gray-200">
                 <Link href={link.href} className="flex gap-3 items-center">
-                  <span className="size-5">
+                  <figure className="size-5">
                     <link.icon />
-                  </span>
+                  </figure>
                   <span>{link.name}</span>
                 </Link>
               </li>

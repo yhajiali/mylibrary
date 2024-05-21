@@ -1,9 +1,9 @@
 "use client";
 import React from "react";
-import Logo from "./ui/Logo";
+import Logo from "./Logo";
 // Icons
 import { MagnifyingGlassIcon, Bars3Icon } from "@heroicons/react/24/outline";
-import ProfilePic from "./ui/ProfilePic";
+import ProfilePic from "./ProfilePic";
 
 interface Props {
   openSideNav: boolean;

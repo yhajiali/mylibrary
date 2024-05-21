@@ -2,9 +2,9 @@ import React from "react";
 
 type Props = {};
 
-const BookCard = (props: Props) => {
+const BookCard = ({}: Props) => {
   return (
-    <div className=" h-96 w-full max-w-sm rounded-lg border border-gray-300 shadow-md m-2">
+    <div className="h-96 w-full max-w-sm rounded-lg border border-gray-300 shadow-md m-2">
       {/* Book Image */}
       <div className="h-1/2 w-full border-b border-gray-300"></div>
       {/* Book Content */}
