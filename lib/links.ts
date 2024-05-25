@@ -12,7 +12,7 @@ import {
   CogIcon,
 } from "@heroicons/react/24/outline";
 import { IoLibraryOutline } from "react-icons/io5";
-import ProfilePic from "../components/ui/ProfilePic";
+import ProfilePic from "../app/components/ui/ProfilePic";
 
 export const sideNavLinks = [
   {
@@ -40,7 +40,7 @@ export const sideNavLinks = [
     links: [
       {
         name: "Currently Reading",
-        href: "/reading",
+        href: "library/reading",
         icon: BookOpenIcon,
       },
       {
