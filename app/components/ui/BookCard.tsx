@@ -9,8 +9,7 @@ type Book = {
   author: string;
   cover: string;
   summary: string;
-  category: string;
-  genres: string[];
+  genres: (string | undefined)[];
   year: number;
   status: string;
   pagesRead: number;
@@ -28,7 +27,7 @@ const BookCard = ({ book }: Props) => {
       href={`/book/${book.id}`}
       className="flex flex-col h-96 w-full sm:max-w-sm rounded-lg border border-gray-300 shadow-md m-2 hover:cursor-pointer hover:-translate-y-1 transition duration-300"
     >
-      {/* Book Image */}
+      {/* Book Cover */}
       <figure className="h-1/2 w-full border-b border-gray-300 flex justify-center items-center">
         <Image
           src={book.cover || defaultCover}
@@ -46,7 +45,9 @@ const BookCard = ({ book }: Props) => {
           <span className="text-sm">
             On Page: {book.pagesRead} of {book.totalPages}
           </span>
+          <span className="text-sm text-[#006cd2]">{book.progress}%</span>
         </div>
+
         <div className="flex flex-wrap justify-between gap-1">
           <div className="flex gap-1">
             {book.genres.map((genre, index) => (
