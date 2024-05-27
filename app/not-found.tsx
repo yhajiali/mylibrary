@@ -1,10 +1,14 @@
+"use client";
 import React from "react";
 import Link from "next/link";
+import { useRouter } from "next/navigation";
 import { ArrowLongRightIcon } from "@heroicons/react/24/outline";
 
 type Props = {};
 
 const notFound = ({}: Props) => {
+  const router = useRouter();
+
   return (
     <div className="max-w-xl px-4 mx-auto flex items-center justify-start h-[85svh] md:px-8">
       <div className="max-w-lg mx-auto space-y-3 text-center">
@@ -17,6 +21,7 @@ const notFound = ({}: Props) => {
         </p>
         <Link
           href="/"
+          onClick={() => router.back()}
           className="text-blue-500 duration-150 hover:text-blue-400 font-medium inline-flex items-center gap-x-1 group"
         >
           Go back

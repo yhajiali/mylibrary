@@ -40,7 +40,7 @@ export const sideNavLinks = [
     links: [
       {
         name: "Currently Reading",
-        href: "library/reading",
+        href: "/reading",
         icon: BookOpenIcon,
       },
       {

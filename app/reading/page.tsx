@@ -1,6 +1,6 @@
+import { books } from "@/lib/data";
 import React from "react";
-import { books } from "../../../lib/data";
-import BookCard from "@/app/components/ui/BookCard";
+import BookCard from "../components/ui/BookCard";
 
 type Props = {};
 
@@ -9,8 +9,8 @@ const page = ({}: Props) => {
     <section className="flex justify-center flex-wrap">
       {books
         .filter((book) => book.status === "reading")
-        .map((book, index) => (
-          <BookCard book={book} key={index} />
+        .map((book) => (
+          <BookCard book={book} key={book.id} />
         ))}
     </section>
   );
