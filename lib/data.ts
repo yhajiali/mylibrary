@@ -9,6 +9,7 @@ export const books = [
     genres: ["Genre 1", "Genre 2", "Genre 3"],
     year: 2024,
     status: "reading",
+    favorite: false,
     pagesRead: 5,
     totalPages: 100,
     get progress() {
@@ -25,6 +26,7 @@ export const books = [
     genres: ["Genre 2", "Genre 2", "Genre 3"],
     year: 2024,
     status: "reading",
+    favorite: false,
     pagesRead: 5,
     totalPages: 100,
     get progress() {
@@ -41,6 +43,7 @@ export const books = [
     genres: ["Genre 3", "Genre 2", "Genre 3"],
     year: 2024,
     status: "toRead",
+    favorite: false,
     pagesRead: 5,
     totalPages: 100,
     get progress() {
@@ -57,6 +60,7 @@ export const books = [
     genres: [, "Genre 2", "Genre 3"],
     year: 2024,
     status: "reading",
+    favorite: true,
     pagesRead: 5,
     totalPages: 100,
     get progress() {
@@ -73,6 +77,7 @@ export const books = [
     genres: ["Genre 5", "Genre 2", "Genre 3"],
     year: 2024,
     status: "finished",
+    favorite: true,
     pagesRead: 5,
     totalPages: 100,
     get progress() {
@@ -89,6 +94,7 @@ export const books = [
     genres: ["Genre 6", "Genre 2", "Genre 3"],
     year: 2024,
     status: "finished",
+    favorite: false,
     pagesRead: 5,
     totalPages: 100,
     get progress() {
@@ -105,6 +111,7 @@ export const books = [
     genres: ["Genre 7", "Genre 2", "Genre 3"],
     year: 2024,
     status: "toRead",
+    favorite: true,
     pagesRead: 5,
     totalPages: 100,
     get progress() {

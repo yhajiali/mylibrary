@@ -9,7 +9,7 @@ const Header = ({}: Props) => {
   const [openSideNav, setSideNav] = useState(false);
 
   return (
-    <header className="sticky top-0 z-10 w-full">
+    <header className="sticky top-0 z-50 w-full">
       <MainNav openSideNav={openSideNav} setSideNav={setSideNav} />
       <SideNav openSideNav={openSideNav} />
     </header>
