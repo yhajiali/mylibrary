@@ -1,7 +1,7 @@
 export const books = [
   {
     id: 1,
-    title: "Book 1",
+    title: "Book Title 1",
     author: "Author 1",
     cover: "next.svg",
     summary:
@@ -17,7 +17,7 @@ export const books = [
   },
   {
     id: 2,
-    title: "Book 2",
+    title: "Book Title 2",
     author: "Author 2",
     cover: "next.svg",
     summary:
@@ -33,7 +33,7 @@ export const books = [
   },
   {
     id: 3,
-    title: "Book 3",
+    title: "Book Title 3",
     author: "Author 3",
     cover: "next.svg",
     summary:
@@ -49,7 +49,7 @@ export const books = [
   },
   {
     id: 4,
-    title: "Book 4",
+    title: "Book Title 4",
     author: "Author 4",
     cover: "next.svg",
     summary:
@@ -65,7 +65,7 @@ export const books = [
   },
   {
     id: 5,
-    title: "Book 5",
+    title: "Book Title 5",
     author: "Author 5",
     cover: "next.svg",
     summary:
@@ -81,7 +81,7 @@ export const books = [
   },
   {
     id: 6,
-    title: "Book 6",
+    title: "Book Title 6",
     author: "Author 6",
     cover: "next.svg",
     summary:
@@ -97,7 +97,7 @@ export const books = [
   },
   {
     id: 7,
-    title: "Book 7",
+    title: "Book Title 7",
     author: "Author 7",
     cover: "next.svg",
     summary:

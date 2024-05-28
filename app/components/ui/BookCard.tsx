@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import defaultCover from "../../../public/next.svg";
+import ProgressBar from "./ProgressBar";
 
 type Book = {
   id: number;
@@ -45,7 +46,10 @@ const BookCard = ({ book }: Props) => {
           <span className="text-sm">
             On Page: {book.pagesRead} of {book.totalPages}
           </span>
-          <span className="text-sm text-[#006cd2]">{book.progress}%</span>
+          <div className="flex items-center gap-2">
+            <ProgressBar progress={book.progress} />
+            <span className="text-sm text-gray-500">{book.progress}%</span>
+          </div>
         </div>
 
         <div className="flex flex-wrap justify-between gap-1">
@@ -59,7 +63,7 @@ const BookCard = ({ book }: Props) => {
               </span>
             ))}
           </div>
-          <span className="text-sm text-gray-500">{book.year}</span>
+          <span className="text-xs text-gray-500">{book.year}</span>
         </div>
       </div>
     </Link>
