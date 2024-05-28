@@ -1,6 +1,6 @@
 import { books } from "@/lib/data";
 import React from "react";
-import BookCard from "../components/ui/BookCard";
+import BookCard from "../../components/ui/BookCard";
 
 type Props = {};
 

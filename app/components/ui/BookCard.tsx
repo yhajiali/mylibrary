@@ -46,17 +46,15 @@ const BookCard = ({ book }: Props) => {
           <span className="text-sm">
             On Page: {book.pagesRead} of {book.totalPages}
           </span>
-          <div className="flex items-center gap-2">
-            <ProgressBar progress={book.progress} />
-            <span className="text-sm text-gray-500">{book.progress}%</span>
-          </div>
+
+          <ProgressBar progress={book.progress} />
         </div>
 
         <div className="flex flex-wrap justify-between gap-1">
           <div className="flex gap-1">
             {book.genres.map((genre, index) => (
               <span
-                className="w-fit flex rounded-lg text-sm bg-gray-300 px-2"
+                className="w-fit rounded text-sm bg-gray-300 px-2"
                 key={index}
               >
                 {genre}
