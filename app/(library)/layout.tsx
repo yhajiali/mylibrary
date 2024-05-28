@@ -29,9 +29,11 @@ const layout = ({ children }: { children: React.ReactNode }) => {
   }
 
   return (
-    <main className="flex flex-col gap-4">
+    <main className="w-full max-w-7xl mx-auto flex flex-col gap-4">
       <h2 className="text-3xl font-bold">{routeTitle}</h2>
-      <section className="flex justify-center flex-wrap">{children}</section>
+      <section className="w-full flex justify-center flex-wrap">
+        {children}
+      </section>
     </main>
   );
 };

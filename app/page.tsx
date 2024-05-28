@@ -17,7 +17,7 @@ export default function Home() {
           </p>
           <a
             className="mt-5 px-4 py-2 text-blue-500 font-medium bg-blue-50 rounded-full inline-flex items-center"
-            href="javascript:void()"
+            href=""
           >
             Try it out
             <svg
