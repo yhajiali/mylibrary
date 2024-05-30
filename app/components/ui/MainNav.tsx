@@ -30,7 +30,7 @@ export const MainNav: React.FC<Props> = ({ openSideNav, setSideNav }) => {
           name="search"
           id="search"
           placeholder="Search..."
-          className="focus:outline-none placeholder:text-gray-500 w-full"
+          className="focus:outline-none placeholder:text-gray-500 w-full text-sm"
         />
       </nav>
 

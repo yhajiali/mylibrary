@@ -26,7 +26,7 @@ const BookCard = ({ book }: Props) => {
   return (
     <Link
       href={`/book/${book.id}`}
-      className="flex flex-col h-96 w-full sm:max-w-sm rounded-lg border border-gray-300 shadow-md m-2 hover:cursor-pointer hover:-translate-y-1 transition duration-300"
+      className="flex flex-col h-96 w-full max-w-s rounded-lg border border-gray-300 shadow-md hover:cursor-pointer hover:-translate-y-1 transition duration-300"
     >
       {/* Book Cover */}
       <figure className="h-1/2 w-full border-b border-gray-300 flex justify-center items-center">
@@ -39,7 +39,7 @@ const BookCard = ({ book }: Props) => {
       </figure>
 
       {/* Book Content */}
-      <div className="h-1/2 w-full flex flex-col justify-between gap-6 px-6 py-4">
+      <div className="h-1/2 w-full flex flex-col justify-between gap-6 px-6 my-4">
         <div className="flex flex-col gap-2">
           <h3 className="text-lg font-bold">{book.title}</h3>
           <span className="text-sm font-semibold">{book.author}</span>
@@ -50,7 +50,7 @@ const BookCard = ({ book }: Props) => {
           <ProgressBar progress={book.progress} />
         </div>
 
-        <div className="flex flex-wrap justify-between gap-1">
+        <div className="flex flex-wrap justify-between items-center gap-2">
           <div className="flex gap-1">
             {book.genres.map((genre, index) => (
               <span
