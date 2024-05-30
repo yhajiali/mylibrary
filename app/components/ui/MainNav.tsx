@@ -19,6 +19,7 @@ export const MainNav: React.FC<Props> = ({ openSideNav, setSideNav }) => {
       >
         <Bars3Icon />
       </button>
+
       <Logo />
 
       {/* Search bar */}

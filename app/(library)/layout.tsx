@@ -18,9 +18,6 @@ const layout = ({ children }: { children: React.ReactNode }) => {
     case "/finished":
       routeTitle = "Finished";
       break;
-    case "/favorites":
-      routeTitle = "Favorites";
-      break;
     case "/bookshelf":
       routeTitle = "Bookshelf";
       break;
