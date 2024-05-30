@@ -1,9 +1,7 @@
 import { books } from "@/lib/data";
 import BookCard from "../../components/ui/BookCard";
 
-type Props = {};
-
-const page = ({}: Props) => {
+const page = () => {
   return (
     <>
       {books.map((book) => (

@@ -7,22 +7,23 @@ export default function Home() {
       <div className="relative z-10 lg:flex gap-5 items-center">
         <div className="flex-1 max-w-lg py-5 sm:mx-auto sm:text-center lg:max-w-max lg:text-left">
           <h3 className="text-3xl text-gray-800 font-semibold md:text-4xl">
-            build your websites with{" "}
-            <span className="text-blue-500">high performance</span>
+            Track your books with the{" "}
+            <span className="text-blue-500">Ultimate Reading List</span>
           </h3>
           <p className="text-gray-500 leading-relaxed mt-3">
-            Nam erat risus, sodales sit amet lobortis ut, finibus eget metus.
-            Cras aliquam ante ut tortor posuere feugiat. Duis sodales nisi id
-            porta lacinia.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio
+            veniam deserunt eos consequuntur esse! Unde et nemo vitae, adipisci
+            natus nesciunt! Dignissimos nesciunt recusandae impedit dicta ex
+            architecto ea cupiditate!
           </p>
           <a
-            className="mt-5 px-4 py-2 text-blue-500 font-medium bg-blue-50 rounded-full inline-flex items-center"
-            href=""
+            className="mt-5 px-4 py-2 text-blue-500 font-medium bg-blue-50 rounded-full inline-flex items-center group"
+            href="/reading"
           >
             Try it out
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              className="h-6 w-6 ml-1 duration-150"
+              className="h-6 w-6 ml-1 duration-150 group-hover:translate-x-1"
               fill="none"
               viewBox="0 0 24 24"
               stroke="currentColor"

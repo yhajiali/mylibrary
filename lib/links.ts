@@ -74,8 +74,8 @@ export const sideNavLinks = {
           icon: Squares2X2Icon,
         },
         {
-          name: "Favorites",
-          href: "/favorites",
+          name: "Favourites",
+          href: "/favourites",
           icon: BookmarkIcon,
         },
         {

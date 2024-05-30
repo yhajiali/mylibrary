@@ -3,9 +3,7 @@ import React, { useState } from "react";
 import { SideNav } from "./ui/SideNav";
 import { MainNav } from "./ui/MainNav";
 
-type Props = {};
-
-const Header = ({}: Props) => {
+const Header = () => {
   const [openSideNav, setSideNav] = useState(false);
 
   return (

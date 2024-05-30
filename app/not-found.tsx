@@ -4,9 +4,7 @@ import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { ArrowLongRightIcon } from "@heroicons/react/24/outline";
 
-type Props = {};
-
-const notFound = ({}: Props) => {
+const notFound = () => {
   const router = useRouter();
 
   return (
