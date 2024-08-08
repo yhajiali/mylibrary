@@ -5,7 +5,7 @@ const page = () => {
   return (
     <>
       {books
-        .filter((book) => book.status === "toRead")
+        .filter((book) => book.status === "up next")
         .map((book) => (
           <BookCard book={book} key={book.id} />
         ))}

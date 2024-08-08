@@ -1,5 +1,7 @@
 "use client";
 
+import { AlertDialog, Badge, Button, Flex } from "@radix-ui/themes";
+
 export default function Home() {
   return (
     <section className="relative max-w-screen-xl mx-auto py-4 px-4 md:px-8">

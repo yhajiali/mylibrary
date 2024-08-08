@@ -42,9 +42,9 @@ export const books = [
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
     genres: ["Genre 3", "Genre 2", "Genre 3"],
     year: 2024,
-    status: "toRead",
+    status: "up next",
     favorite: false,
-    pagesRead: 5,
+    pagesRead: 0,
     totalPages: 100,
     get progress() {
       return Math.round((this.pagesRead / this.totalPages) * 100);
@@ -78,7 +78,7 @@ export const books = [
     year: 2024,
     status: "finished",
     favorite: true,
-    pagesRead: 5,
+    pagesRead: 100,
     totalPages: 100,
     get progress() {
       return Math.round((this.pagesRead / this.totalPages) * 100);
@@ -95,7 +95,7 @@ export const books = [
     year: 2024,
     status: "finished",
     favorite: false,
-    pagesRead: 5,
+    pagesRead: 100,
     totalPages: 100,
     get progress() {
       return Math.round((this.pagesRead / this.totalPages) * 100);
@@ -110,9 +110,9 @@ export const books = [
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
     genres: ["Genre 7", "Genre 2", "Genre 3"],
     year: 2024,
-    status: "toRead",
+    status: "up next",
     favorite: true,
-    pagesRead: 5,
+    pagesRead: 0,
     totalPages: 100,
     get progress() {
       return Math.round((this.pagesRead / this.totalPages) * 100);
