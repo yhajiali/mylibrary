@@ -59,7 +59,7 @@ const BookCard = ({ book, status = false }: Props) => {
       </figure>
 
       {/* Book Content */}
-      <div className="h-1/2 w-full flex flex-col justify-between gap-4 px-6 my-4">
+      <div className="h-1/2 w-full flex flex-col justify-between gap-4 px-6 my-4 overflow-clip">
         <div className="flex flex-col gap-2">
           <h3 className="text-lg font-bold">{book.title}</h3>
           <span className="text-sm font-semibold">{book.author}</span>
@@ -78,8 +78,8 @@ const BookCard = ({ book, status = false }: Props) => {
           </Flex>
         )}
 
-        <div className="flex flex-wrap justify-between items-center gap-2">
-          <div className="flex gap-1">
+        <div className="flex justify-between items-center gap-2">
+          <div className="flex flex-wrap gap-1">
             {book.genres.map((genre, index) => (
               <span
                 className="w-fit rounded text-sm bg-gray-300 px-2"

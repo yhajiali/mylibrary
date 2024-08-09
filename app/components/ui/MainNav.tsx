@@ -4,7 +4,13 @@ import Logo from "./Logo";
 // Icons
 import { MagnifyingGlassIcon, Bars3Icon } from "@heroicons/react/24/outline";
 import ProfilePic from "./ProfilePic";
-import { SignedIn, SignUp, SignUpButton } from "@clerk/nextjs";
+import {
+  SignedIn,
+  SignedOut,
+  SignUp,
+  SignUpButton,
+  UserButton,
+} from "@clerk/nextjs";
 interface Props {
   openSideNav: boolean;
   setSideNav: React.Dispatch<React.SetStateAction<boolean>>;
@@ -40,11 +46,17 @@ export const MainNav: React.FC<Props> = ({ openSideNav, setSideNav }) => {
       </SignedIn>
 
       {/* Profile dropdown */}
-      <SignUpButton>
-        <div className="size-10 cursor-pointer">
-          <ProfilePic />
-        </div>
-      </SignUpButton>
+      <SignedIn>
+        <UserButton></UserButton>
+      </SignedIn>
+
+      <SignedOut>
+        <SignUpButton>
+          <div className="size-10 cursor-pointer">
+            <ProfilePic />
+          </div>
+        </SignUpButton>
+      </SignedOut>
     </div>
   );
 };

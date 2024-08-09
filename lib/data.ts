@@ -1,29 +1,29 @@
 export const books = [
   {
     id: 1,
-    title: "Book Title 1",
-    author: "Author 1",
+    title: "Atomic Habits",
+    author: "James Clear",
     cover: "next.svg",
     summary:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-    genres: ["Genre 1", "Genre 2", "Genre 3"],
+    genres: ["self-help", "productivity", "non-fiction"],
     year: 2024,
     status: "reading",
     favorite: false,
-    pagesRead: 5,
-    totalPages: 100,
+    pagesRead: 48,
+    totalPages: 324,
     get progress() {
       return Math.round((this.pagesRead / this.totalPages) * 100);
     },
   },
   {
     id: 2,
-    title: "Book Title 2",
-    author: "Author 2",
+    title: "Feel Good Productivity",
+    author: "Ali Abdaal",
     cover: "next.svg",
     summary:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-    genres: ["Genre 2", "Genre 2", "Genre 3"],
+    genres: ["productivity", "self-help", "non-fictional"],
     year: 2024,
     status: "reading",
     favorite: false,
@@ -69,12 +69,12 @@ export const books = [
   },
   {
     id: 5,
-    title: "Book Title 5",
-    author: "Author 5",
+    title: "The Autobiography of Malcolm X",
+    author: "Malcolm X & Alex Haley",
     cover: "next.svg",
     summary:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-    genres: ["Genre 5", "Genre 2", "Genre 3"],
+    genres: ["Biography", "Religious"],
     year: 2024,
     status: "finished",
     favorite: true,
