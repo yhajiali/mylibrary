@@ -51,7 +51,7 @@ export const MainNav: React.FC<Props> = ({ openSideNav, setSideNav }) => {
       </SignedIn>
 
       <SignedOut>
-        <SignUpButton>
+        <SignUpButton mode="modal">
           <div className="size-10 cursor-pointer">
             <ProfilePic />
           </div>

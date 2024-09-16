@@ -8,7 +8,7 @@ const notFound = () => {
   const router = useRouter();
 
   return (
-    <div className="max-w-xl px-4 mx-auto flex items-center justify-start h-[85svh] md:px-8">
+    <section className="max-w-xl px-4 mx-auto flex items-center justify-center h-[85svh] md:px-8">
       <div className="max-w-lg mx-auto space-y-3 text-center">
         <h3 className="text-gray-800 text-4xl font-semibold sm:text-5xl">
           Page not found
@@ -26,7 +26,7 @@ const notFound = () => {
           <ArrowLongRightIcon className="size-5 group-hover:translate-x-1 transition duration-200" />
         </Link>
       </div>
-    </div>
+    </section>
   );
 };
 

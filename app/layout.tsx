@@ -7,8 +7,9 @@ import { Analytics } from "@vercel/analytics/react";
 import "@radix-ui/themes/styles.css";
 import { Theme } from "@radix-ui/themes";
 // Clerk
-import { ClerkProvider } from "@clerk/nextjs";
+import { ClerkProvider, SignedIn, SignedOut } from "@clerk/nextjs";
 import { dark } from "@clerk/themes";
+import Landing from "./components/Landing";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -29,7 +30,13 @@ export default function RootLayout({
         <body className={inter.className}>
           <Theme>
             <Header />
-            <main className="lg:pl-60 m-4">{children}</main>
+            <SignedIn>
+              <main className="lg:pl-60 m-4">{children}</main>
+            </SignedIn>
+
+            <SignedOut>
+              <Landing />
+            </SignedOut>
           </Theme>
         </body>
         <Analytics />
