@@ -1,7 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
-import defaultCover from "../../../public/next.svg";
 import ProgressBar from "./ProgressBar";
 import { Badge, Flex } from "@radix-ui/themes";
 
@@ -51,10 +50,11 @@ const BookCard = ({ book, status = false }: Props) => {
       {/* Book Cover */}
       <figure className="h-1/2 w-full border-b border-gray-300 flex justify-center items-center">
         <Image
-          src={book.cover || defaultCover}
+          src={book.cover}
           width={100}
           height={100}
           alt={`Book Cover of: ${book.title}`}
+          className="size-full object-cover"
         />
       </figure>
 

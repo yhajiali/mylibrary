@@ -3,7 +3,7 @@ export const books = [
     id: 1,
     title: "Atomic Habits",
     author: "James Clear",
-    cover: "next.svg",
+    cover: "https://d22po4pjz3o32e.cloudfront.net/placeholder-image.svg",
     summary:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
     genres: ["self-help", "productivity", "non-fiction"],
@@ -20,7 +20,7 @@ export const books = [
     id: 2,
     title: "Feel Good Productivity",
     author: "Ali Abdaal",
-    cover: "next.svg",
+    cover: "https://d22po4pjz3o32e.cloudfront.net/placeholder-image.svg",
     summary:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
     genres: ["productivity", "self-help", "non-fictional"],
@@ -37,7 +37,7 @@ export const books = [
     id: 3,
     title: "Book Title 3",
     author: "Author 3",
-    cover: "next.svg",
+    cover: "https://d22po4pjz3o32e.cloudfront.net/placeholder-image.svg",
     summary:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
     genres: ["Genre 3", "Genre 2", "Genre 3"],
@@ -54,7 +54,7 @@ export const books = [
     id: 4,
     title: "Book Title 4",
     author: "Author 4",
-    cover: "next.svg",
+    cover: "https://d22po4pjz3o32e.cloudfront.net/placeholder-image.svg",
     summary:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
     genres: [, "Genre 2", "Genre 3"],
@@ -71,7 +71,7 @@ export const books = [
     id: 5,
     title: "The Autobiography of Malcolm X",
     author: "Malcolm X & Alex Haley",
-    cover: "next.svg",
+    cover: "https://d22po4pjz3o32e.cloudfront.net/placeholder-image.svg",
     summary:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
     genres: ["Biography", "Religious"],
@@ -88,7 +88,7 @@ export const books = [
     id: 6,
     title: "Book Title 6",
     author: "Author 6",
-    cover: "next.svg",
+    cover: "https://d22po4pjz3o32e.cloudfront.net/placeholder-image.svg",
     summary:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
     genres: ["Genre 6", "Genre 2", "Genre 3"],
@@ -105,7 +105,7 @@ export const books = [
     id: 7,
     title: "Book Title 7",
     author: "Author 7",
-    cover: "next.svg",
+    cover: "https://d22po4pjz3o32e.cloudfront.net/placeholder-image.svg",
     summary:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
     genres: ["Genre 7", "Genre 2", "Genre 3"],
